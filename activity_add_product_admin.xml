@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/background_color">
+
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="Back"
+        android:layout_gravity="start" />
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="290dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Product Image"
+        android:onClick="selectImage"
+        android:src="@drawable/ic_product_placeholder" />
+
+    <!-- Input for Product Name -->
+    <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:textColorHint="#B0BEC5" />
+
+    <!-- Input for Product Description -->
+    <EditText
+        android:id="@+id/etProductDescription"
+        android:layout_width="383dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/input_background"
+        android:gravity="top"
+        android:hint="Product Description"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:padding="12dp"
+        android:textColorHint="#B0BEC5" />
+
+    <!-- Input for Product Price -->
+
+    <!-- Submit Button -->
+
+    <EditText
+        android:id="@+id/etProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/input_background"
+        android:hint="Price (in $)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColorHint="#B0BEC5" />
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF6F00"
+        android:text="Add Product"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
